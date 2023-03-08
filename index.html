@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <section class="whole-card">
+
+    <section class="header-section">
+      <h1 class="header-title">Simple, traffic-based pricing</h1>
+      <h2 class="header-subtitle">Sign-up for our 30-day trial. No credit card required. </h2>
+    </section>
+
+    <section class="info-section">
+      <section class="stats-section">
+        <section class='num-pageviews-section'>
+          <p class="num-pageviews number">100K</p> 
+          <p class="num-pageviews label"> Pageviews</p>
+        </section>
+        <section class='price-section'>
+          <p class="price number">$16.00</p>
+          <p class="price label"> / month</p>
+        </section>
+      </section>
+
+      <div class="slidecontainer">
+        <input type="range" min="1" max="5" value="3" class="slider">
+      </div>
+
+      <section class="billing-section">
+        <p class="monthly-billing">Monthly Billing</p>
+        <label class="switch">
+          <input type="checkbox" class="switch-input">
+          <span class="switch-round"></span>
+        </label>
+        <p class="yearly-billing">Yearly Billing</p> 
+        <p class="discount">25% discount</p>
+      </section>
+
+      <section class="footer-section">
+        <section class="checklist-section">
+          <section class="checklist-item unlimited-websites">
+            <figure class="checkmark"></figure>
+            <p class="checklist-p unlimited-websites">Unlimited websites</p>
+          </section>
+          <section class="checklist-item">
+            <figure class="checkmark"></figure>
+            <p class="checklist-p">100% data ownership</p>
+          </section>
+          <section class="checklist-item">
+            <figure class="checkmark"></figure>
+            <p class="checklist-p">Email reports</p>
+          </section>
+        </section>
+
+        <button class="start-btn">Start my trial</button>
+      </section>
+    </section>
+
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Gaelen</a>.
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
